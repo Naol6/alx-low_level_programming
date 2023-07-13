@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * hy there
+ * hy - there
  *
- * hfuerhfldk
-*/
+ * hfuerhf: ldk
+ */
 int main(void)
 {
 int z;
