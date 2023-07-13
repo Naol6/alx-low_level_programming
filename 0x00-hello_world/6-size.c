@@ -4,8 +4,7 @@
  * hy - there
  *
  * hfuerhf: ldk
- */
-
+*/
 int main(void)
 {
 int z;
