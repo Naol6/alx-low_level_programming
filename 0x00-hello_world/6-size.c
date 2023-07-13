@@ -4,7 +4,7 @@
  * size 6
  * 
  * size me
-*/
+ */
 int main() 
 {
     int a;
