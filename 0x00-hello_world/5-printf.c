@@ -1,8 +1,8 @@
 #include<stdio.h>
 
 /**
- * hy - naol
- * it's: naol
+ * main - printf
+ * Return: 0
 */
 int main(void)
 {
