@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /**
- * hy - there
- *
- * hfuerhf: ldk
+ * main - test sizeof
+ * Return: 0
 */
 
 int main(void)
