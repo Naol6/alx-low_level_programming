@@ -2,7 +2,7 @@
 #include<unistd.h>
 
 /**
- * main - 101 
+ * main - test write
  * Return: 1
  */
 int main(void)
