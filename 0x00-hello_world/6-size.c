@@ -4,7 +4,7 @@
  * hy there
  *
  * hfuerhfldk
- */
+*/
 int main(void)
 {
 int z;
