@@ -12,7 +12,8 @@ int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 /* your code goes there */
-int lastdigit = abs(n) % 10;
+int lastdigit;
+lastdigit= abs(n) % 10;
 printf(" %d ", n);
 if (lastdigit > 5)
 {
