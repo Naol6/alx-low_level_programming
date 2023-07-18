@@ -1,10 +1,9 @@
 #include<stdio.h>
-//#include<main.h>
+
 /**
  * main - putchar
  * Return: type 0
 */
-
 int main(void)
 {
 printf("_putchar\n");
