@@ -1,21 +1,26 @@
 #include <stdio.h>
 #include"main.h"
+/**
+ * print_sign - int n
+ * @n: print
+ * Return: else
+*/
 
 int print_sign(int n)
 {
 if (n > 0)
 {
-printf("+");
+_putchar("+");
 return (1);
 }
 else if (n == 0)
 {
-printf("0");
+_putchar("0");
 return (0);
 }
 else
 {
-printf("-");
+_putchar("-");
 return (-1);
 }
 }
