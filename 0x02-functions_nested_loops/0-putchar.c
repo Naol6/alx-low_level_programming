@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- * main - _putchar
+ * main - putchar
  * Return: type 0
 */
 
