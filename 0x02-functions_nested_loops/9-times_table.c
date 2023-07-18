@@ -1,9 +1,7 @@
 #include "main.h"
 /**
  * times_table - prints small letter
- *
  * Return: void
- *
  */
 void times_table(void)
 {
