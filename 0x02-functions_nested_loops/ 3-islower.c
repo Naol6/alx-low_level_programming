@@ -1,6 +1,6 @@
 #include"main.h"
 /**
- * main
+ * main - main type
  * Return: 0
 */
 

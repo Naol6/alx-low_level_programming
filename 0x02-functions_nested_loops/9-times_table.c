@@ -1,5 +1,6 @@
-#include <stdio.h>
+#include "main.h"
 /**
+ * main - time table
  * times_table - prints 0-89
  * Return: times-table
 */
