@@ -1,25 +1,47 @@
 #include "main.h"
 /**
- * main - time table
- * times_table - prints 0-89
- * Return: times-table
-*/
-
+ * times_table - prints small letter
+ *
+ * Return: void
+ *
+ */
 void times_table(void)
 {
-int row, col, product;
-for (row = 0; row <= 9; row++)
+int i;
+int j;
+
+for (i = 0; i < 10; i++)
 {
-for (col = 0; col <= 9; col++)
+for (j = 0; j < 10; j++)
 {
-product = row * col;
-printf("%2d, ", product);
-}
-printf("\n");
-}
-}
-int main(void)
+if ((i * j) > 9)
 {
-times_table();
-return (0);
+int b = (int)((i * j) % 100) / 10;
+
+_putchar(b + '0');
+_putchar((i * j) % 10 + '0');
+if ((j + 1) != 10)
+{
+_putchar(',');
+_putchar(' ');
+}
+}
+else
+{
+_putchar((i * j) + '0');
+if ((i * (j + 1)) >= 10 && (j + 1) < 10)
+{
+_putchar(',');
+_putchar(' ');
+}
+else if ((j + 1) != 10)
+{
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
+}
+}
+}
+_putchar('\n');
+}
 }
