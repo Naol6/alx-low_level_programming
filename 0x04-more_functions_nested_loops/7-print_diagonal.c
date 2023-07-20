@@ -19,7 +19,7 @@ for (col = 0; col < size; col++)
 {
 if (col == row)
 {
-_putchar('\$');
+_putchar('\\');
 }
 else if (col < row)
 {
