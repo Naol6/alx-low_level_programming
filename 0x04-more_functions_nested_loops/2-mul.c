@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * mul - multiplication of two number
- * @a: type
- * @b: type
+ * @x: type
+ * @y: type
  * Return: return multi or the value
  */
 int mul(int x, int y)
