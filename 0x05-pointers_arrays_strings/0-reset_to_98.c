@@ -1,4 +1,5 @@
-#include"main.h"
+#include "main.h"
+
 /**
  * reset_to_98 - using int
  * @n: int
