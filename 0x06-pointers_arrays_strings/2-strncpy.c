@@ -1,25 +1,25 @@
 #include "main.h"
 
 /**
- * _strncpy - copi n to string
- * @dest: string
- * @src: source
- * @n: number of byte
- * Return: asked result
+ * _strncpy - copies a string
+ * @dest: destination string
+ * @src: source string
+ * @n: number of bytes to copy
+ * Return: pointer to the resulting string
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-int index = 0;
-while (src[index] != '\0' && index < n)
+int i;
+i = 0;
+while (src[i] != '\0' && i < n)
 {
-dest[index] = src[index];
-index++;
+dest[i] = src[i];
+i++;
 }
-while (index < n)
+while (i < n)
 {
-dest[index] = '\0';
-index++;
+dest[i] = '\0';
+i++;
 }
-
 return (dest);
 }
