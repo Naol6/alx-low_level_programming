@@ -7,7 +7,7 @@
  * @n: number of byte
  * Return: asked result
  */
-char *_strncpy(char *dest, const char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 int index = 0;
 while (src[index] != '\0' && index < n)
