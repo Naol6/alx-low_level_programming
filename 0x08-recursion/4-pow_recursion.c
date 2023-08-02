@@ -3,6 +3,7 @@
 /**
  * _pow_recursion - x the power of y
  * @y: exponent
+ * @x: the number
  * Return: the value
  */
 int _pow_recursion(int x, int y)
