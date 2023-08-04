@@ -1,13 +1,17 @@
 #include <stdio.h>
-/**
- * main - number of argument passed on it
- * @argc: number of comand line
- * @argv: array
- * Return: the value
-*/
 
-int main(int argc, char *argv __attribute__((unused)))
+/**
+ * main - prints all arguments it receives.
+ * @argc: argument count
+ * @argv: arguments
+ *
+ * Return: 0
+ */
+int main(int argc, char **argv)
 {
-printf("%d\n", argc - 1);
+int i;
+for (i = 0; i < argc; i++)
+printf("%s\n", argv[i]);
+
 return (0);
 }
