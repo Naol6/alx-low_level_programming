@@ -1,1 +1,1 @@
-hello-me
+this isstatic library
