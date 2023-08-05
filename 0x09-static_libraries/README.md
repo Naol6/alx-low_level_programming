@@ -1,1 +1,1 @@
-hello this is static labraries
+creating library

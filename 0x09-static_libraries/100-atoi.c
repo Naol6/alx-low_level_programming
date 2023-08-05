@@ -1,21 +1,45 @@
 #include "main.h"
 
 /**
-* _atoi - changes a string to an int
-* @s: the string to be changed
-* Return: the converted int
-*/
-int _atoi(char *s)
+ * _atoi - prints the integer value of the first,
+ * encounterd integer
+ *
+ * @str: pointer to the string
+ *
+ *Return: the integer
+ */
+int _atoi(char *str)
 {
-int i = 1;
-unsigned int num = 0;
-do {
-if (*s == '-')
-i *= -1;
-else if (*s >= '0' && *s <= '9')
-num = num * 10 + (*s - '0');
-else if (num > 0)
+int index = 0;
+int countNegatives = 0;
+int result = 0;
+int length = 0;
+int foundDigit = 0;
+
+while (*(str + length) != '\0')
+length++;
+
+for (index = 0; index < length && foundDigit == 0; index++)
+{
+if (*(str + index) == '-')
+countNegatives++;
+
+if (*(str + index) >= '0' && *(str + index) <= '9')
+{
+int digit = *(str + index) - '0';
+
+if (countNegatives % 2)
+digit = -digit;
+result = result * 10 + digit;
+foundDigit = 1;
+if (*(str + index + 1) < '0' || *(str + index + 1) > '9')
 break;
-} while (*s++);
-return (num *i);
+foundDigit = 0;
+}
+}
+
+if (foundDigit == 0)
+return (0);
+
+return (result);
 }
