@@ -17,7 +17,7 @@ range = 0;
 if (min > max)
 return (NULL);
 range = ((max + 1) - min);
-p = malloc(range * sizeof(int));
+p = malloc(range  *sizeof(int));
 if (p == NULL)
 return (NULL);
 for (i = 0; i < range; i++)
